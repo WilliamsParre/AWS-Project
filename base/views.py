@@ -124,9 +124,10 @@ def update_profile(request):
     return render(request, 'base/update_profile.html', {'form1': form1, 'form2': form2})
 
 
+@login_required(login_url='login')
 def get_blog(request):
     response = requests.get(
-        'https://s3zv2hksw1.execute-api.us-east-1.amazonaws.com/getBlog')
+        'https://7meqj4nho2.execute-api.us-east-1.amazonaws.com/getBlog')
     print(response, response.content)
     blog = response.json()
     return render(request, 'base/index.html', {'blog': blog})
