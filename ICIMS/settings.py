@@ -89,21 +89,6 @@ DATABASES = {
     }
 }
 
-# DATABASES = {
-#     'default': {
-#         'NAME': 'app_data',
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'USER': 'postgres_user',
-#         'PASSWORD': 's3krit'
-#     },
-#     'users': {
-#         'NAME': 'user_data',
-#         'ENGINE': 'django.db.backends.mysql',
-#         'USER': 'mysql_user',
-#         'PASSWORD': 'priv4te'
-#     }
-# }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -159,7 +144,6 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger'
 }
 
-# DATABASE_ROUTERS = ['routers.db_routers.AuthRouter']
 
 # DynamoDB
 # DYNAMODB_SESSIONS_AWS_ACCESS_KEY_ID = os.getenv('ACCESS_KEY')
